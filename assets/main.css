@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-size: 1.15em;
+    color: #141414;
+    font-family: 'Roboto', sans-serif;
+}
+
+main > div > div {
+    max-width: 800px;
+    padding: 1px 24px 1px 24px;
+    margin: auto;
+}
+
+footer > div > div {
+    max-width: 800px;
+    padding: 0px 24px 0px 24px;
+    margin: auto;
+}
+
+footer {
+    padding: 1px;
+    color: #EEEEEE;
+    background-color: #141414;
+}
+
+footer nav {
+    text-align: center;
+}
+
+footer a {
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+footer h3 {
+    font-size: 1.25em;
+    text-align: left;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 > span {
+    text-shadow: 0px 5px 10px #e94f37;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+a.btn {
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 1.25em;
+    font-weight: 700;
+    margin: 1em 0 1em 0;
+    box-shadow: 0px 5px 10px #14141450;
+    text-shadow: 0px 2px 2px #2f5220;
+    background-image: linear-gradient(#6AB547, #71BA4F, #4D8433);
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+a.btn > span#subprincipal {
+    font-size: 0.8em;
+    font-weight: 400;
+    font-style: italic;
+    text-shadow: 0px 2px 2px #2f5220;
+}
+
+a.btn > span#principal {
+    font-size: 1.25em;
+    text-shadow: 0px 2px 2px #2f5220;
+}
+
+a.btnwpp {
+    display: block;
+    margin: 1.8rem 0 2.2rem 0;
+    width: 75%;
+    padding: 10px 0 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-image: linear-gradient(#6AB547, #71BA4F, #4D8433);
+    border-radius: 15px;
+    box-shadow: 0px 4px 0px 1px #355c24;
+}
+
+.bluebg {
+    color: #FFFFFF;
+    background-color: #005281;
+}
+
+.bluebg h1, .bluebg h2 {
+    text-shadow: 0px 2px 2px #003452;
+}
+
+.graybg {
+    background-color: #efefef;
+}
+
+.orangebg {
+    background-color: #e94f37;
+    text-shadow: 0px 2px 2px #832b1e;
+}
+
+.yellowbg {
+    font-size: 1.1em;
+    color: #141414;
+    background-color: #EDB91D;
+}
+
+.red {
+    font-size: 1.1em;
+    color: #ed1d1d;
+}
+
+img#depoiment {
+    border-radius: 15px;
+    border: 4px solid #E94F37;
+    box-shadow: 0px 5px 10px #003452;
+}
+
+img#ofert {
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px #999999;
+}
+
+div.video {
+    margin-top: -1em;
+    margin-bottom: 1.4em;
+    padding: 42px 0px 50% 0px;
+    position: relative;
+}
+
+div.video > iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+}
+
+p#institutional {
+    font-size: 14px;
+    text-align: center;
+}
+
+p.tcenter {
+    text-align: center;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+.mb0 {
+    margin-bottom: 0;
+}
