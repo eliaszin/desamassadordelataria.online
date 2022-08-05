@@ -48,12 +48,6 @@ footer img {
     margin-bottom: 1em;
 }
 
-.flogo {
-    width: 50%;
-    margin: 1.8rem auto;
-    text-align: center;
-}
-
 h1, h2, h3 {
     text-align: center;
 }
@@ -275,5 +269,11 @@ p.p14 a {
 @media (min-width: 500px) {
     div#more-depoiments {
         display: none;
+    }
+
+    .flogo {
+        width: 50%;
+        margin: 1.8rem auto;
+        text-align: center;
     }
 }
