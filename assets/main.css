@@ -1,33 +1,355 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto&display=swap');
+
+/* basical configurations */
 
 html {
+    scroll-behavior: smooth;
     font-size: 62.5%;
 }
 
 body {
     margin: 0;
-    font-size: 2.0rem;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    background-color: #001829;
 }
 
-/* div */
-
 main > div > div {
-    max-width: 800px;
+    max-width: 750px;
+    margin: 1.8rem auto;
+    padding: 1.5rem;
+}
+
+/* footer */
+
+footer > div {
+    background-color: #000C14;
+}
+
+footer > div > div {
+    max-width: 750px;
     margin: 0 auto;
+    padding: 1.5rem;
+}
+
+footer nav {
+    text-align: center;
+}
+
+footer a {
+    margin: 0 auto;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* video div */
+
+div.pre-video {
+    margin-top: -4rem;
+    margin-bottom: 4.5rem;
+}
+
+div.video {
+    margin-top: -1em;
+    margin-bottom: 1.4em;
+    padding: 42px 0px 50% 0px;
+    position: relative;
+}
+
+div.video > iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    left: -2px;
+}
+
+/* benefices div */
+
+div.benefices {
+    margin: 4rem 0;
+    border-radius: 15px;
+    border: 2px #0A9DFF solid;
+    box-shadow: 0px 5px 10px #0A9DFF;
+}
+
+div.benefices i {
+    display: block;
+    margin: 2rem 0 0 0;
+    color: #FFFFFF;
+    font-size: 6rem;
+    text-align: center;
+    text-shadow: 0px 0px 20px #FFFFFF;
+}
+
+div.benefices p {
+    color: #0A9DFF;
+    text-align: center;
+}
+
+/* guarantee div */
+
+div#guarantee li {
+    font-size: 1.8rem;
+}
+
+/* depoiments div */
+
+div#more-depoiments img {
+    margin: 0rem auto;
+}
+
+div#more-depoiments a {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.image-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.image-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.card-slider {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+}
+
+.slider-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* ofert div */
+
+div#ofert .white {
+    text-shadow: 0px 0px 20px #FFFFFF;
+}
+
+.product-card {
+    margin: 2rem auto;
+    color: #FFFFFF;
+}
+
+.product-card-title {
+    padding: 1.5rem;
+    background-color: #0A9DFF;
+    border-radius: 15px 15px 0 0;
+    text-shadow: 0px 2px 4px #003D66;
+}
+
+.product-card-body {
+    padding: 1.5rem;
+    border: 2px #0A9DFF solid;
+    border-radius: 0 0 15px 15px;
+}
+
+.product-card-body p {
+    font-size: 2.8rem;
+}
+
+.price-before {
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.price-before s {
+    text-decoration-color: #BB0A21;
+}
+
+.price-after {
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.economic {
+    margin: -1rem auto 2rem auto;
+    width: 60%;
+    padding: 0.7rem;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    border: 1px #FFFFFF solid;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* font configuration */
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    margin: 3rem 0;
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+}
+
+h1 .blue {
+    text-shadow: 0px 0px 20px #0A9DFF;
+}
+
+h2 {
+    margin: 2rem 0;
+    font-weight: 700;
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+h3 {
+    margin: 2rem 0;
+    font-size: 2.4rem;
+}
+
+p {
+    margin: 2rem 0;
+    letter-spacing: 0.5px;
+}
+
+p u {
+    text-decoration-color: #0A9DFF;
+}
+
+p.institutional {
+    font-size: 1.4rem;
+}
+
+/* colors */
+
+.white {
+    color: #FFFFFF;
+}
+
+.blue {
+    color: #0A9DFF;
+}
+
+.red {
+    color: #BB0A21;
+}
+
+.darkblue-bg {
+    background-color: #000C14;
+}
+
+/* btns */
+
+a.btn-scroll {
+    display: block;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.75px;
+    color: #FFFFFF;
+    background-image: linear-gradient(#0A9DFF, #003052);
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px #0A9DFF;
+}
+
+a.btn-buy {
+    display: block;
+    margin: 0 auto 2.2rem auto;
+    width: 90%;
+    padding: 10px 0 10px 0;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-image: linear-gradient(#0cce2c, #0a3904);
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px #0cce2c;
 }
 
 /* img */
 
 img {
     display: block;
-    margin: 0 auto;
+    max-width: 95%;
+    margin: 2rem auto;
+    text-align: center;
 }
 
-/* a */
+img.img-style01 {
+    border-radius: 15px;
+    border: 4px solid #0A9DFF;
+}
 
-a.scroll-btn {
+img.btn-selo {
     display: block;
-    margin: 1.8rem auto;
-    padding: 1.0rem;
+    margin: -2rem auto 2rem auto;
+}
+
+img.btn-selo2 {
+    display: block;
+    margin: -1rem auto 2rem auto;
+}
+
+/* hacks */
+
+.tcenter {
     text-align: center;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+.mb0 {
+    margin-bottom: 0;
+}
+
+@media (max-width: 450px) {
+    div#bg-01 {
+        background-image: url(media/bg-01.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    div#bg-02 {
+        background-image: url(media/bg-02.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    div#ofert {
+        background-image: url(media/bg-03.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    div#bg-04 {
+        background-image: url(media/bg-04.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
