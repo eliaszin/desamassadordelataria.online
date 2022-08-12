@@ -104,8 +104,8 @@
                 <a class="btn-scroll" href="#ofert-scroll">QUERO ESSE DESAMASSADOR!</a>
             </div>
         </div>
-        <a name="ofert-scroll" class="ofert-scroll"></a>
         <div id="ofert" class="darkblue-bg">
+            <a id="ofert-scroll"></a> 
             <div>
                 <h2><span class="red">ATENÇÃO ABAIXO:</span><br><span class="white">OPORTUNIDADE ÚNICA</span></h2>
                 <div class="product-card">
@@ -231,5 +231,17 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/8a64070044.js" crossorigin="anonymous"></script>
+    <script>
+        $("nav a").click(function(event){
+        event.preventDefault();
+        var dest=0;
+        if($(this.hash).offset().top > $(document).height()-$(window).height()){
+        dest=$(document).height()-$(window).height();
+        }else{
+        dest=$(this.hash).offset().top;
+        }
+        $('html,body').animate({scrollTop:dest}, 1000,'swing');
+        });
+    </script>
 </body>
 </html>
