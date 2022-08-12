@@ -18,8 +18,7 @@ body {
 
 main > div > div {
     max-width: 750px;
-    margin: 0 auto;
-    padding: 1.5rem;
+    margin: 3.3rem auto 3.3rem auto;
 }
 
 /* footer */
