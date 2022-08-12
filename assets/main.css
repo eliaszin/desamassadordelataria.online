@@ -291,6 +291,7 @@ a.btn-buy {
 img {
     display: block;
     max-width: 95%;
+    height: 100%;
     margin: 2rem auto;
     text-align: center;
 }
